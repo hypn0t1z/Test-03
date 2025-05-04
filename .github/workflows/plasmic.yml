@@ -6,9 +6,8 @@ permissions:
   pull-requests: write
 
 on:
-  repository_dispatch:
-    types: [plasmic]
-
+  push:
+    branches: [ main ]
 jobs:
   job:
     name: Sync, build and deploy
